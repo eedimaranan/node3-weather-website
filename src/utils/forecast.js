@@ -18,8 +18,10 @@ const forecast = (latitude, longitude, callback) => {
         body.current.weather_descriptions[0] +
           ". It is currently " +
           body.current.temperature +
-          " and it feels like " +
-          body.current.feelslike
+          " degrees, it feels like " +
+          body.current.feelslike +
+          " degrees and the local time is " +
+          body.location.localtime
       );
     }
   });
